@@ -59,8 +59,17 @@
         </div>
       </section>
 
-      <!-- Slide 2: Loops Analysis -->
+      <!-- Slide 2: ??? -->
       <section class="slide" id="slide-2">
+        <div class="slide-content">
+          <div class="thesis-layout">
+            <h3 style="opacity: 0.35;">??</h3>
+          </div>
+        </div>
+      </section>
+
+<!-- Slide 3: Loops Analysis -->
+      <section class="slide" id="slide-3">
         <div class="slide-content">
           <div class="thesis-layout">
             <h3>On William Basinski · <em>The Disintegration Loops</em> (2002)</h3>
@@ -76,24 +85,20 @@
         </div>
       </section>
 
-      <!-- Slide 3: Tech Calcification Analysis -->
-      <section class="slide" id="slide-3">
+<!-- Slide 4: Tech Calcification Analysis -->
+      <section class="slide" id="slide-4">
         <div class="slide-content">
           <div class="thesis-layout">
-            <h3>On the Calcification of Technology</h3>
-            <p style="margin-top: 1.5rem;">Setting aside criticism over the term 'disruptive', now that these companies
-              have entrenched power to maintain, their goal has become calcification. The broader landscape of
-              contemporary technology is now defined by a structural impulse to eliminate the
-              possibility&nbsp;of&nbsp;loss.</p>
-            <p>The text-based smiley : ) was a disobedient hack—a repurposing of punctuation against its intended use.
+            <h3>The Smiley and the Emoji</h3>
+            <p style="margin-top: 1.5rem;">The text-based smiley : ) was a disobedient hack—a repurposing of punctuation against its intended use.
               The emoji is its replacement: a coherent, consortium-controlled asset, each character standardized,
               licensed, and managed. 👮‍♂️ 👎</p>
           </div>
         </div>
       </section>
 
-      <!-- Slide 4: Pasquinelli Quote -->
-      <section class="slide" id="slide-4">
+<!-- Slide 5: Pasquinelli Quote -->
+      <section class="slide" id="slide-5">
         <div class="slide-content">
           <div class="quote-layout">
             <h3>The Dictatorship of the Past</h3>
@@ -107,8 +112,8 @@
         </div>
       </section>
 
-      <!-- Slide 5: Cartographic Silences Analysis -->
-      <section class="slide" id="slide-5">
+<!-- Slide 6: Cartographic Silences Analysis -->
+      <section class="slide" id="slide-6">
         <div class="slide-content">
           <div class="thesis-layout">
             <h3>J.B. Harley · Deconstructing the Map (1989)</h3>
@@ -120,8 +125,8 @@
         </div>
       </section>
 
-      <!-- Slide 6: Cartography Thesis -->
-      <section class="slide" id="slide-6">
+<!-- Slide 7: Cartography Thesis -->
+      <section class="slide" id="slide-7">
         <div class="slide-content">
           <div class="thesis-layout">
             <h3>Spaces of Representation: Mapping as an Ontological Act</h3>
@@ -132,8 +137,8 @@
         </div>
       </section>
 
-      <!-- Slide 7: Siegert Quote -->
-      <section class="slide" id="slide-7">
+<!-- Slide 8: Siegert Quote -->
+      <section class="slide" id="slide-8">
         <div class="slide-content">
           <div class="quote-layout">
             <h3>The Map is the Territory</h3>
@@ -150,8 +155,8 @@
         </div>
       </section>
 
-      <!-- Slide 8: AlphaGo / Curve Fitting Analysis -->
-      <section class="slide" id="slide-8">
+<!-- Slide 9: AlphaGo / Curve Fitting Analysis -->
+      <section class="slide" id="slide-9">
         <div class="slide-content">
           <div class="thesis-layout">
             <h3>The Compass vs. The Horizon</h3>
@@ -159,12 +164,13 @@
               strategic space, generative models are trained to minimize the distance between their output and the
               statistical distribution of the training data. The entire optimization process is predicated on
               curve-fitting to the historical average; there is no reward signal for&nbsp;the&nbsp;unprecedented.</p>
+            <p>The same is true of protein-folding AI, which optimizes against a physical ground truth, not a statistical average.</p>
           </div>
         </div>
       </section>
 
-      <!-- Slide 9: Figure 1 Noise -->
-      <section class="slide" id="slide-9">
+<!-- Slide 10: Figure 1 Noise -->
+      <section class="slide" id="slide-10">
         <div class="slide-content">
           <div class="visual-layout">
             <div class="image-frame">
@@ -176,8 +182,8 @@
         </div>
       </section>
 
-      <!-- Slide 10: Pathologizing Noise Analysis -->
-      <section class="slide" id="slide-10">
+<!-- Slide 11: Pathologizing Noise Analysis -->
+      <section class="slide" id="slide-11">
         <div class="slide-content">
           <div class="thesis-layout">
             <h3>The Unstructured: Diffusion & The Suppression of Noise</h3>
@@ -189,8 +195,8 @@
         </div>
       </section>
 
-      <!-- Slide 11: Figure 2 Pristine Mountain -->
-      <section class="slide" id="slide-11">
+<!-- Slide 12: Figure 2 Pristine Mountain -->
+      <section class="slide" id="slide-12">
         <div class="slide-content">
           <div class="visual-layout">
             <div class="image-frame">
@@ -201,17 +207,13 @@
         </div>
       </section>
 
-      <!-- Slide 12: Components of a Diffusion Model -->
-      <section class="slide" id="slide-12">
+<!-- Slide 13: Components of a Diffusion Model -->
+      <section class="slide" id="slide-13">
         <div class="slide-content">
           <div class="thesis-layout">
-            <h3>The Components of a Diffusion Model</h3>
+            <h3>CLIP and the U-Net</h3>
             <ul
               style="margin-top: 1.5rem; list-style: none; text-align: left; max-width: 70ch; display: flex; flex-direction: column; gap: 1rem;">
-              <li><strong style="color: var(--red);">VAE</strong><br>compresses the image into a smaller, more efficient
-                &ldquo;latent space&rdquo; to work in, then decompresses the final result back to a full image</li>
-              <li><strong style="color: var(--red);">Latent space</strong><br>the compressed mathematical space where
-                the actual image-generation happens, rather than working pixel-by-pixel</li>
               <li><strong style="color: var(--red);">CLIP</strong><br>converts the text prompt into a vector, anchoring
                 what the image should depict</li>
               <li><strong style="color: var(--red);">U-Net</strong><br>the denoising engine; predicts and removes noise
@@ -221,8 +223,8 @@
         </div>
       </section>
 
-      <!-- Slide 13: The Code Block -->
-      <section class="slide" id="slide-13">
+<!-- Slide 14: The Code Block -->
+      <section class="slide" id="slide-14">
         <div class="slide-content">
           <h3>The Intervention</h3>
           <div class="code-container">
@@ -257,21 +259,7 @@
         </div>
       </section>
 
-      <!-- Slide 14: Malabou Quote -->
-      <section class="slide" id="slide-14">
-        <div class="slide-content">
-          <div class="quote-layout">
-            <h3>Plasticity as Disobedience</h3>
-            <blockquote style="margin-top: 1.5rem;">&ldquo;The word plasticity thus unfolds its meaning between sculptural
-              molding and deflagration, which is to say explosion. From this perspective, to talk about the plasticity
-              of the brain means to see in it not only the creator and receiver of form but also an agency of
-              disobedience to every constituted form, a refusal to submit to&nbsp;a&nbsp;model.&rdquo;</blockquote>
-            <div class="quote-attribution">Catherine Malabou · What Should We Do with Our Brain? (2008)</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Slide 15: Compass spin Analysis -->
+<!-- Slide 15: Compass spin Analysis -->
       <section class="slide" id="slide-15">
         <div class="slide-content">
           <div class="thesis-layout">
@@ -284,7 +272,7 @@
         </div>
       </section>
 
-      <!-- Slide 16: Figure 3 Step 8 -->
+<!-- Slide 16: Figure 3 Step 8 -->
       <section class="slide" id="slide-16">
         <div class="slide-content">
           <div class="visual-layout">
@@ -296,7 +284,7 @@
         </div>
       </section>
 
-      <!-- Slide 17: Figure 4 Step 10 -->
+<!-- Slide 17: Figure 4 Step 10 -->
       <section class="slide" id="slide-17">
         <div class="slide-content">
           <div class="visual-layout">
@@ -308,7 +296,7 @@
         </div>
       </section>
 
-      <!-- Slide 18: Phenomenology of the Rupture -->
+<!-- Slide 18: Phenomenology of the Rupture -->
       <section class="slide" id="slide-18">
         <div class="slide-content">
           <div class="thesis-layout">
@@ -321,7 +309,7 @@
         </div>
       </section>
 
-      <!-- Slide 19: Figure 5 Step 18 -->
+<!-- Slide 19: Figure 5 Step 18 -->
       <section class="slide" id="slide-19">
         <div class="slide-content">
           <div class="visual-layout">
@@ -333,7 +321,7 @@
         </div>
       </section>
 
-      <!-- Slide 20: Ambiguity Analysis -->
+<!-- Slide 20: Ambiguity Analysis -->
       <section class="slide" id="slide-20">
         <div class="slide-content">
           <div class="thesis-layout">
@@ -346,7 +334,7 @@
         </div>
       </section>
 
-      <!-- Slide 21: Figure 6 Step 19 -->
+<!-- Slide 21: Figure 6 Step 19 -->
       <section class="slide" id="slide-21">
         <div class="slide-content">
           <div class="visual-layout">
@@ -358,7 +346,7 @@
         </div>
       </section>
 
-      <!-- Slide 22: Figure 7 Step 20 -->
+<!-- Slide 22: Figure 7 Step 20 -->
       <section class="slide" id="slide-22">
         <div class="slide-content">
           <div class="visual-layout">
@@ -370,23 +358,21 @@
         </div>
       </section>
 
-      <!-- Slide 23: Bloch Quote -->
+<!-- Slide 23: Malabou Quote -->
       <section class="slide" id="slide-23">
         <div class="slide-content">
           <div class="quote-layout">
-            <h3>Utopian Rupture &amp; The &ldquo;Not Yet&rdquo;</h3>
-            <blockquote style="margin-top: 1.5rem;">&ldquo;Lazy substitution, current copying representation...these repressed
-              what had been discovered...around this point deeply ingrained habits of thinking cling to a world without
-              Front. The desiderium, the only honest attribute of all men, is unexplored. The Not-Yet-Conscious,
-              Not-Yet-Become, although it fulfils the meaning of all men and the horizon of all being, has not even
-              broken through as a word, let alone as a concept. This blossoming field of questions lies almost
-              speechless in previous&nbsp;philosophy.&rdquo;</blockquote>
-            <div class="quote-attribution">Ernst Bloch · The Principle of Hope · Introduction</div>
+            <h3>Plasticity as Disobedience</h3>
+            <blockquote style="margin-top: 1.5rem;">&ldquo;The word plasticity thus unfolds its meaning between sculptural
+              molding and deflagration, which is to say explosion. From this perspective, to talk about the plasticity
+              of the brain means to see in it not only the creator and receiver of form but also an agency of
+              disobedience to every constituted form, a refusal to submit to&nbsp;a&nbsp;model.&rdquo;</blockquote>
+            <div class="quote-attribution">Catherine Malabou · What Should We Do with Our Brain? (2008)</div>
           </div>
         </div>
       </section>
 
-      <!-- Slide 24: References -->
+<!-- Slide 24: References -->
       <section class="slide" id="slide-24">
         <div class="slide-content">
           <h3>Academic References</h3>
@@ -404,7 +390,7 @@
         </div>
       </section>
 
-      <!-- Slide 25: Contact & Links -->
+<!-- Slide 25: Contact & Links -->
       <section class="slide" id="slide-25">
         <div class="slide-content title-layout">
           <h1>be in touch</h1>
