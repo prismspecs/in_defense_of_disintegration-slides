@@ -237,11 +237,7 @@
     image = pipe(prompt).images[<span class="code-number">0</span>]
     image.save(<span class="code-string">f"step_{i:04d}.jpg"</span>)</code></pre>
           </div>
-          <p style="max-width: 72ch; text-align: left; font-size: clamp(0.85rem, 1.6vw, 1rem); line-height: 1.55;">The
-             U-Net (the part of the model that turns noise into an image) holds its &ldquo;knowledge&rdquo; in millions of numerical
-            weights. This script randomly selects a small percentage of them and nudges each one slightly off its
-            trained value—then generates an image, repeats, generates again. Each pass leaves the model a little more
-            corrupted than&nbsp;the&nbsp;last.</p>
+
         </div>
       </section>
 
