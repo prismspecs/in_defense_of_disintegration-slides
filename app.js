@@ -139,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Navigation triggers
   btnNext.addEventListener('click', nextSlide);
   btnPrev.addEventListener('click', prevSlide);
+  document.getElementById('btn-first').addEventListener('click', () => goToSlide(0));
   document.getElementById('btn-fullscreen').addEventListener('click', toggleFullscreen);
   
   // Slide play button
