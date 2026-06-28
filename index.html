@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In Defense of Disintegration — Grayson Earle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Hidden Audio Element for Ambient Music -->
+  <audio id="bg-audio" src="media/disintegration_loops.mp3" preload="auto" loop style="display: none;"></audio>
+
+  <!-- CRT scanline overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Main Container -->
+  <div id="app-container">
+
+    <!-- Top Header Bar -->
+    <header id="header-bar">
+      <!-- Audio Player Control Board -->
+      <div class="audio-player-wrapper">
+        <button id="btn-play-pause" class="play-pause-btn" aria-label="Play ambient music" disabled>
+          <!-- Play Icon -->
+          <svg id="icon-play" viewBox="0 0 24 24" width="16" height="16">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <!-- Pause Icon (hidden by default) -->
+          <svg id="icon-pause" viewBox="0 0 24 24" width="16" height="16" style="display: none;">
+            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+          </svg>
+        </button>
+
+        <div class="volume-wrapper">
+          <button id="btn-volume" class="volume-btn" aria-label="Mute audio">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
+            </svg>
+          </button>
+          <input type="range" id="slider-volume" class="volume-slider" min="0" max="100" value="40" aria-label="Volume">
+        </div>
+      </div>
+    </header>
+
+    <!-- Slide Deck Container -->
+    <main id="presentation-deck">
+
+      <!-- Slide 1: Title -->
+      <section class="slide active" id="slide-1">
+        <div class="slide-content title-layout">
+          <h1>In Defense of Disintegration</h1>
+          <p class="subtitle">a critique of technologically-imposed coherence in artificial intelligence and other
+            compression-based software infrastructures</p>
+          <h3>Grayson Earle</h3>
+        </div>
+      </section>
+
+      <!-- Slide 2: Loops Analysis -->
+      <section class="slide" id="slide-2">
+        <div class="slide-content">
+          <div class="thesis-layout">
+            <h3>On William Basinski · <em>The Disintegration Loops</em> (2002)</h3>
+
+            <p style="margin-top:1.5rem;">The Disintegration Loops is a 2002–2003 four-album series by composer William
+              Basinski—ambient, drone, and tape music made from old Muzak recordings on magnetic tape that physically
+              degraded as he played and recorded them.</p>
+
+            <p>The tape's decay isn't a loss of data; it's a rupture. It reveals the fragile seam between an ordered
+              system and the chaotic potential of the infinite volume beneath&nbsp;the&nbsp;surface.</p>
+            <button id="btn-play-loops" class="btn-play-slide">▶ Play</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 3: Tech Calcification Analysis -->
+      <section class="slide" id="slide-3">
+        <div class="slide-content">
+          <div class="thesis-layout">
+            <h3>On the Calcification of Technology</h3>
+            <p style="margin-top: 1.5rem;">Setting aside criticism over the term 'disruptive', now that these companies
+              have entrenched power to maintain, their goal has become calcification. The broader landscape of
+              contemporary technology is now defined by a structural impulse to eliminate the
+              possibility&nbsp;of&nbsp;loss.</p>
+            <p>The text-based smiley : ) was a disobedient hack—a repurposing of punctuation against its intended use.
+              The emoji is its replacement: a coherent, consortium-controlled asset, each character standardized,
+              licensed, and managed. 👮‍♂️ 👎</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 4: Pasquinelli Quote -->
+      <section class="slide" id="slide-4">
+        <div class="slide-content">
+          <div class="quote-layout">
+            <h3>The Dictatorship of the Past</h3>
+            <blockquote style="margin-top: 1.5rem;">&ldquo;A logical limit of machine learning classification...is the
+              inability to recognise a unique anomaly that appears for the first time...As a technique of information
+              compression, machine learning automates the dictatorship of the past, of past taxonomies and behavioural
+              patterns, over the present. This problem can be termed the regeneration of the old &mdash; the application of a
+              homogenous space-time view that restrains the possibility of a new historical event.&rdquo;</blockquote>
+            <div class="quote-attribution">Matteo Pasquinelli &amp; Vladan Joler · The Nooscope Manifested (2020)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 5: Cartographic Silences Analysis -->
+      <section class="slide" id="slide-5">
+        <div class="slide-content">
+          <div class="thesis-layout">
+            <h3>J.B. Harley · Deconstructing the Map (1989)</h3>
+            <p style="margin-top: 1.5rem;">What the map omits is not an oversight but a structural choice about what
+              empire needs to know. These omissions constitute &ldquo;cartographic silences.&rdquo; These are not merely neutral
+              gaps in data but &ldquo;positive statements of what is not intended to be there&rdquo; which consequently redefine
+              the&nbsp;represented&nbsp;world.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 6: Cartography Thesis -->
+      <section class="slide" id="slide-6">
+        <div class="slide-content">
+          <div class="thesis-layout">
+            <h3>Spaces of Representation: Mapping as an Ontological Act</h3>
+            <p style="margin-top: 1.5rem;">The cartographic operation does not describe a territory that already exists;
+              it constitutes the territory as a knowable and administrable reality. Rather than merely compressing an
+              antecedent reality, the model dictates what qualifies as&nbsp;representable.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 7: Siegert Quote -->
+      <section class="slide" id="slide-7">
+        <div class="slide-content">
+          <div class="quote-layout">
+            <h3>The Map is the Territory</h3>
+            <blockquote style="margin-top: 1.5rem;">&ldquo;Second, maps are not just representations but also instruments.
+              They are based on mathematical operations and they constitute a substantial part of a cultural practice. A
+              main feature of the analysis of maps as cultural technologies is that it considers maps <span
+                class="em">not as
+                representations of space but as spaces of representation</span>. The historicity that is of interest, in
+              the
+              first place, in connection with those spatial representations is not the historicity of the represented
+              spaces. Instead it is the historicity of the space of representation&nbsp;itself.&rdquo;</blockquote>
+            <div class="quote-attribution">Bernhard Siegert · The Map is the Territory (2011)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 8: AlphaGo / Curve Fitting Analysis -->
+      <section class="slide" id="slide-8">
+        <div class="slide-content">
+          <div class="thesis-layout">
+            <h3>The Compass vs. The Horizon</h3>
+            <p style="margin-top: 1.5rem;">Where AlphaGo's training pressure pushes outward toward unexplored regions of
+              strategic space, generative models are trained to minimize the distance between their output and the
+              statistical distribution of the training data. The entire optimization process is predicated on
+              curve-fitting to the historical average; there is no reward signal for&nbsp;the&nbsp;unprecedented.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 9: Figure 1 Noise -->
+      <section class="slide" id="slide-9">
+        <div class="slide-content">
+          <div class="visual-layout">
+            <div class="image-frame">
+              <img src="media/noise.png" alt="Latent Gaussian noise">
+            </div>
+            <div class="image-caption">Figure 1: The starting point for a diffusion model, noise passed through a VAE.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 10: Pathologizing Noise Analysis -->
+      <section class="slide" id="slide-10">
+        <div class="slide-content">
+          <div class="thesis-layout">
+            <h3>The Unstructured: Diffusion & The Suppression of Noise</h3>
+            <p style="margin-top: 1.5rem;">Diffusion models represent the apex of this tendency toward imposed coherence
+              in that their architecture actively pathologizes the unstructured. They algorithmically predict the
+              pattern of interference preventing coherence and subtract it, treating noise as a problem to be solved
+              step by step until the output matches a pre-ordained, statistically&nbsp;probable&nbsp;reality.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 11: Figure 2 Pristine Mountain -->
+      <section class="slide" id="slide-11">
+        <div class="slide-content">
+          <div class="visual-layout">
+            <div class="image-frame">
+              <img src="media/mountain_original.png" alt="Stable Diffusion Mountain original">
+            </div>
+            <div class="image-caption">Figure 2: Stable Diffusion v1.5 majestic mountain range at sunrise.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 12: Components of a Diffusion Model -->
+      <section class="slide" id="slide-12">
+        <div class="slide-content">
+          <div class="thesis-layout">
+            <h3>The Components of a Diffusion Model</h3>
+            <ul
+              style="margin-top: 1.5rem; list-style: none; text-align: left; max-width: 70ch; display: flex; flex-direction: column; gap: 1rem;">
+              <li><strong style="color: var(--red);">VAE</strong><br>compresses the image into a smaller, more efficient
+                &ldquo;latent space&rdquo; to work in, then decompresses the final result back to a full image</li>
+              <li><strong style="color: var(--red);">Latent space</strong><br>the compressed mathematical space where
+                the actual image-generation happens, rather than working pixel-by-pixel</li>
+              <li><strong style="color: var(--red);">CLIP</strong><br>converts the text prompt into a vector, anchoring
+                what the image should depict</li>
+              <li><strong style="color: var(--red);">U-Net</strong><br>the denoising engine; predicts and removes noise
+                step by step, steered by CLIP's anchor, until a coherent image emerges in latent space</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 13: The Code Block -->
+      <section class="slide" id="slide-13">
+        <div class="slide-content">
+          <h3>The Intervention</h3>
+          <div class="code-container">
+            <div class="code-header">
+              <div class="code-dots">
+                <div class="code-dot red"></div>
+                <div class="code-dot"></div>
+                <div class="code-dot"></div>
+              </div>
+              <div class="code-title">degrade_all_tensors.py</div>
+            </div>
+            <pre><code><span class="code-keyword">def</span> <span class="code-def">degrade_all_tensors</span>(module, ratio, max_percent):
+    <span class="code-keyword">for</span> name, param <span class="code-keyword">in</span> module.named_parameters():
+        <span class="code-keyword">with</span> torch.no_grad():
+            p_range = param.data.max() - param.data.min()
+            <span class="code-keyword">if</span> p_range &lt;= <span class="code-number">1e-12</span>: <span class="code-keyword">continue</span>
+            mask = (torch.rand(param.shape) &lt; ratio)
+            delta = max_percent * p_range
+            shifts = torch.empty(param.shape).uniform_(-delta, delta)
+            param.data[mask] += shifts[mask]
+
+<span class="code-keyword">for</span> i <span class="code-keyword">in</span> <span class="code-builtin">range</span>(num_steps):
+    degrade_all_tensors(pipe.unet, ratio=<span class="code-number">0.01</span>, max_percent=<span class="code-number">0.05</span>)
+    image = pipe(prompt).images[<span class="code-number">0</span>]
+    image.save(<span class="code-string">f"step_{i:04d}.jpg"</span>)</code></pre>
+          </div>
+          <p style="max-width: 72ch; text-align: left; font-size: clamp(0.85rem, 1.6vw, 1rem); line-height: 1.55;">The
+             U-Net (the part of the model that turns noise into an image) holds its &ldquo;knowledge&rdquo; in millions of numerical
+            weights. This script randomly selects a small percentage of them and nudges each one slightly off its
+            trained value—then generates an image, repeats, generates again. Each pass leaves the model a little more
+            corrupted than&nbsp;the&nbsp;last.</p>
+        </div>
+      </section>
+
+      <!-- Slide 14: Malabou Quote -->
+      <section class="slide" id="slide-14">
+        <div class="slide-content">
+          <div class="quote-layout">
+            <h3>Plasticity as Disobedience</h3>
+            <blockquote style="margin-top: 1.5rem;">&ldquo;The word plasticity thus unfolds its meaning between sculptural
+              molding and deflagration, which is to say explosion. From this perspective, to talk about the plasticity
+              of the brain means to see in it not only the creator and receiver of form but also an agency of
+              disobedience to every constituted form, a refusal to submit to&nbsp;a&nbsp;model.&rdquo;</blockquote>
+            <div class="quote-attribution">Catherine Malabou · What Should We Do with Our Brain? (2008)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 15: Compass spin Analysis -->
+      <section class="slide" id="slide-15">
+        <div class="slide-content">
+          <div class="thesis-layout">
+            <h3>Programmatic Sabotage: U-Net Neuronal Weight Corruption</h3>
+            <p style="margin-top: 1.5rem;">What the disintegration script performs is categorically different. It does
+              not cause the model to over-reach toward coherence; it destroys the model's capacity to reach for
+              coherence at all. The compass is not pointing in the wrong direction—it is spinning. The model is not
+              failing to complete its task correctly; it is being prevented from completing&nbsp;the&nbsp;task.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 16: Figure 3 Step 8 -->
+      <section class="slide" id="slide-16">
+        <div class="slide-content">
+          <div class="visual-layout">
+            <div class="image-frame">
+              <img src="media/step_8.png" alt="Mountain range after 8 steps">
+            </div>
+            <div class="image-caption">Figure 3: Stable Diffusion mountain range session after 8 steps.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 17: Figure 4 Step 10 -->
+      <section class="slide" id="slide-17">
+        <div class="slide-content">
+          <div class="visual-layout">
+            <div class="image-frame">
+              <img src="media/step_10.png" alt="Mountain range after 10 steps">
+            </div>
+            <div class="image-caption">Figure 4: Image generated after 10 steps of degradation.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 18: Phenomenology of the Rupture -->
+      <section class="slide" id="slide-18">
+        <div class="slide-content">
+          <div class="thesis-layout">
+            <h3>Against the Readymade Image: Phenomenology of the Rupture</h3>
+            <p style="margin-top: 1.5rem;">Generated Images do not produce thought. Seeing the statistical average of a
+              mountain is fundamentally not thought-provoking, in the literal sense. Encountering something
+              non-normative or abstract prompts the viewer to think. <em>What am I looking at?</em> This
+              question is already answered with generated&nbsp;imagery.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 19: Figure 5 Step 18 -->
+      <section class="slide" id="slide-19">
+        <div class="slide-content">
+          <div class="visual-layout">
+            <div class="image-frame">
+              <img src="media/step_18.png" alt="Mountain range after 18 steps">
+            </div>
+            <div class="image-caption">Figure 5: Image generated after 18 steps of degradation.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 20: Ambiguity Analysis -->
+      <section class="slide" id="slide-20">
+        <div class="slide-content">
+          <div class="thesis-layout">
+            <h3>Not-Knowing: Aesthetic Indeterminacy & Resistance</h3>
+            <p style="margin-top: 1.5rem;">To encounter something you cannot immediately categorize, and to sit with
+              that not-knowing rather than resolve it, is itself a political act. It suspends the automatic. It refuses
+              the comfort of recognition—the prompt-in, reassurance-out loop that defines how most people
+              use&nbsp;these&nbsp;tools.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 21: Figure 6 Step 19 -->
+      <section class="slide" id="slide-21">
+        <div class="slide-content">
+          <div class="visual-layout">
+            <div class="image-frame">
+              <img src="media/step_19.png" alt="Mountain range after 19 steps">
+            </div>
+            <div class="image-caption">Figure 6: Image generated after 19 steps of degradation.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 22: Figure 7 Step 20 -->
+      <section class="slide" id="slide-22">
+        <div class="slide-content">
+          <div class="visual-layout">
+            <div class="image-frame">
+              <img src="media/step_20.png" alt="Mountain range after 20 steps">
+            </div>
+            <div class="image-caption">Figure 7: Image generated after 20 steps of degradation.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 23: Bloch Quote -->
+      <section class="slide" id="slide-23">
+        <div class="slide-content">
+          <div class="quote-layout">
+            <h3>Utopian Rupture &amp; The &ldquo;Not Yet&rdquo;</h3>
+            <blockquote style="margin-top: 1.5rem;">&ldquo;Lazy substitution, current copying representation...these repressed
+              what had been discovered...around this point deeply ingrained habits of thinking cling to a world without
+              Front. The desiderium, the only honest attribute of all men, is unexplored. The Not-Yet-Conscious,
+              Not-Yet-Become, although it fulfils the meaning of all men and the horizon of all being, has not even
+              broken through as a word, let alone as a concept. This blossoming field of questions lies almost
+              speechless in previous&nbsp;philosophy.&rdquo;</blockquote>
+            <div class="quote-attribution">Ernst Bloch · The Principle of Hope · Introduction</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 24: References -->
+      <section class="slide" id="slide-24">
+        <div class="slide-content">
+          <h3>Academic References</h3>
+          <ul class="ref-list-v2">
+            <li><strong>Basinski, William.</strong> 2002. <em>The Disintegration Loops.</em> 2062. Compact disc.</li>
+            <li><strong>Bender, Emily M., Timnit Gebru, et al.</strong> 2021. &ldquo;On the Dangers of Stochastic Parrots: Can
+              Language Models Be Too Big? 🦜&rdquo; <em>FAccT '21.</em></li>
+            <li><strong>Bloch, Ernst.</strong> 1986. <em>The Principle of Hope.</em> Cambridge, MA: MIT Press.</li>
+            <li><strong>Borges, Jorge Luis.</strong> 1998. &ldquo;On Exactitude in Science.&rdquo; <em>Collected Fictions.</em></li>
+            <li><strong>Harley, J. B.</strong> 1989. &ldquo;Deconstructing the Map.&rdquo; <em>Cartographica.</em></li>
+            <li><strong>Pasquinelli, Matteo, and Vladan Joler.</strong> 2020. &ldquo;The Nooscope Manifested: AI as Instrument
+              of Knowledge Extractivism.&rdquo; <em>AI &amp; Society.</em></li>
+            <li><strong>Siegert, Bernhard.</strong> 2011. &ldquo;The Map is the Territory.&rdquo; <em>Radical Philosophy.</em></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Slide 25: Contact & Links -->
+      <section class="slide" id="slide-25">
+        <div class="slide-content title-layout">
+          <h1>be in touch</h1>
+          <div class="contact-links"
+            style="font-family: var(--font-mono); font-size: 1.2rem; display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; letter-spacing: 0.05em;">
+            <a href="https://www.graysonearle.com" target="_blank"
+              style="color: var(--accent-color); text-decoration: none; transition: color var(--transition-fast);">www.graysonearle.com</a>
+            <a href="mailto:studio@graysonearle.com"
+              style="color: var(--accent-color); text-decoration: none; transition: color var(--transition-fast);">studio@graysonearle.com</a>
+            <a href="https://instagram.com/prismspecs" target="_blank"
+              style="color: var(--accent-color); text-decoration: none; transition: color var(--transition-fast);">@prismspecs</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Navigation Controls & Progress Footer -->
+    <footer id="footer-controls">
+      <div class="nav-buttons">
+        <button id="btn-prev" class="btn-nav" disabled aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          </svg>
+        </button>
+        <button id="btn-next" class="btn-nav" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+          </svg>
+        </button>
+      </div>
+      <div class="slide-counter">
+        <span id="current-slide">1</span> / <span id="total-slides">24</span>
+      </div>
+      <button id="btn-fullscreen" class="btn-nav" aria-label="Toggle fullscreen">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" />
+        </svg>
+      </button>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
