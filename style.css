@@ -81,7 +81,7 @@ h3 {
   font-family: var(--font-mono);
   color: var(--red); text-transform: uppercase;
   letter-spacing: 0.15em; font-weight: 600;
-  font-size: 1.38rem;
+  font-size: 1.52rem;
 }
 
 /* ── Shared flex column centered block ── */
