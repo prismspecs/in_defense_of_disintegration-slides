@@ -3,7 +3,7 @@
 :root {
   --bg: #000000;
   --surface: #080808;
-  --red: oklch(0.70 0.14 20.0);
+  --red: oklch(0.72 0.22 35);
   --white: #ffffff;
   --muted: #777777;
   --border: #444444;
