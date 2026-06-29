@@ -112,7 +112,7 @@ blockquote .em { color: var(--red); font-style: normal; font-weight: 500; }
 
 /* ── Thesis body ── */
 
-.thesis-layout p {
+.thesis-layout p, .thesis-layout ul {
   font-size: clamp(1.2rem, 2.4vw, 1.7rem); line-height: 1.65;
   text-wrap: pretty; margin-bottom: 2rem;
   text-align: left; max-width: 70ch;
