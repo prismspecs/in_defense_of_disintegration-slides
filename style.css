@@ -127,13 +127,13 @@ blockquote .em { color: var(--red); font-style: normal; font-weight: 500; }
 /* ── Images ── */
 
 .image-frame {
-  width: 100%; max-width: 1200px; max-height: 85vh;
+  width: 100%; max-width: 1400px;
   overflow: hidden; background: #000;
   display: flex; align-items: center; justify-content: center;
 }
 
 .image-frame img {
-  width: 100%; height: auto; max-height: calc(85vh - 6px);
+  width: 100%; height: auto;
   object-fit: contain; display: block;
 }
 
@@ -282,7 +282,7 @@ pre {
   blockquote { font-size: clamp(1.1rem, 3vw, 1.5rem); }
   .thesis-layout p { font-size: 1rem; }
 
-  .image-frame { max-width: 90vw; max-height: 38vh; }
-  .image-frame img { max-height: calc(38vh - 6px); }
+  .image-frame { max-width: 90vw; }
+
   .volume-wrapper { display: none; }
 }
