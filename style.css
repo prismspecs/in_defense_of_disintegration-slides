@@ -99,7 +99,7 @@ h3 {
 
 /* ── Quote ── */
 
-.quote-layout, .thesis-layout { padding: 0 2rem; }
+.quote-layout, .thesis-layout { padding: 0 1rem; }
 
 blockquote {
   font-family: var(--font-quote); font-style: italic; font-weight: 400;
