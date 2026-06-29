@@ -71,7 +71,7 @@ html, body {
 
 h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.64rem, 6vw, 5.5rem); font-weight: 400;
+  font-size: clamp(2.8rem, 6.5vw, 5.8rem); font-weight: 400;
   line-height: 1; letter-spacing: 0.01em;
   text-transform: uppercase; text-wrap: balance;
   color: var(--white);
@@ -81,7 +81,7 @@ h3 {
   font-family: var(--font-mono);
   color: var(--red); text-transform: uppercase;
   letter-spacing: 0.15em; font-weight: 600;
-  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-size: 1.15rem;
 }
 
 /* ── Shared flex column centered block ── */
@@ -94,7 +94,7 @@ h3 {
 .title-layout { gap: 1.5rem; }
 
 .title-layout .subtitle {
-  font-size: 1.05rem; color: var(--muted);
+  font-size: 1.15rem; color: var(--muted);
   letter-spacing: 0.1em; text-transform: lowercase;
 }
 
@@ -113,7 +113,7 @@ blockquote .em { color: var(--red); font-style: normal; font-weight: 500; }
 /* ── Thesis body ── */
 
 .thesis-layout p {
-  font-size: clamp(1.1rem, 2.2vw, 1.5rem); line-height: 1.65;
+  font-size: clamp(1.2rem, 2.4vw, 1.7rem); line-height: 1.65;
   text-wrap: pretty; margin-bottom: 2rem;
   text-align: left; max-width: 70ch;
 }
@@ -121,7 +121,7 @@ blockquote .em { color: var(--red); font-style: normal; font-weight: 500; }
 /* ── Meta label (attribution) ── */
 
 .quote-attribution {
-  font-size: 0.95rem; color: var(--muted);
+  font-size: 1rem; color: var(--muted);
   text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;
 }
 
@@ -139,7 +139,7 @@ blockquote .em { color: var(--red); font-style: normal; font-weight: 500; }
 }
 
 .image-caption {
-  font-size: 0.9rem; color: var(--muted);
+  font-size: 1rem; color: var(--muted);
   margin-top: 1rem; text-align: center;
   letter-spacing: 0.05em; text-transform: lowercase;
 }
@@ -163,12 +163,12 @@ blockquote .em { color: var(--red); font-style: normal; font-weight: 500; }
 .code-dot.red { background: var(--red); }
 
 .code-title {
-  font-size: 0.85rem; font-weight: bold;
+  font-size: 0.9rem; font-weight: bold;
 }
 
 pre {
   margin: 0; padding: 1.5rem; overflow-x: auto;
-  font-size: clamp(0.85rem, 2vw, 1rem); line-height: 1.4;
+  font-size: clamp(0.9rem, 2.1vw, 1.05rem); line-height: 1.4;
 }
 
 .code-keyword, .code-number { color: var(--red); font-weight: bold; }
@@ -179,7 +179,7 @@ pre {
 
 .ref-list-v2 {
   list-style: none; text-align: left;
-  font-size: clamp(0.75rem, 1.7vw, 0.9rem); line-height: 1.6;
+  font-size: 0.9rem; line-height: 1.6;
   display: flex; flex-direction: column; gap: 1.25rem;
   max-width: 800px; margin: 0 auto;
 }
@@ -257,14 +257,14 @@ pre {
 .btn-nav:disabled { border-color: #333; color: #333; cursor: not-allowed; }
 
 .slide-counter {
-  font-size: 0.85rem; color: var(--muted); letter-spacing: 0.1em;
+  font-size: 0.9rem; color: var(--muted); letter-spacing: 0.1em;
 }
 
 /* ── Buttons on slides ── */
 
 .btn-play-slide {
   background: none; border: 1px solid var(--red); color: var(--red);
-  font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.25em;
+  font-size: 1rem; text-transform: uppercase; letter-spacing: 0.25em;
   cursor: pointer; padding: 0.6rem 1.8rem; margin-top: 1rem;
   transition: color var(--fast), background var(--fast);
 }
@@ -279,9 +279,9 @@ pre {
   #header-bar, #footer-controls { padding: 0.5rem 1.5rem; }
   .slide { padding: 0.75rem 1.5rem; }
 
-  h1 { font-size: clamp(2rem, 5.5vw, 3rem); }
+  h1 { font-size: clamp(2.2rem, 6vw, 3.3rem); }
   blockquote { font-size: clamp(1.1rem, 3vw, 1.5rem); }
-  .thesis-layout p { font-size: 1.1rem; }
+  .thesis-layout p { font-size: 1.2rem; }
 
   .image-frame { max-width: 90vw; max-height: 55vh; }
   .image-frame img { max-height: calc(55vh - 6px); }
