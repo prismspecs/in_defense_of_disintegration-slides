@@ -37,7 +37,7 @@ html, body {
 }
 
 #app-container {
-  position: relative; width: 100vw; height: 100vh;
+  position: relative; width: 100vw; height: 100vh; overflow: hidden;
   display: flex; flex-direction: column; justify-content: space-between;
 }
 
@@ -55,7 +55,7 @@ html, body {
 .slide {
   position: absolute; inset: 0; z-index: 2;
   display: flex; align-items: center; justify-content: center;
-  padding: 2rem 3rem 4rem;
+  padding: 2rem 3rem;
   opacity: 0; pointer-events: none;
   transform: translateY(10px);
   transition: opacity var(--smooth), transform var(--smooth);
@@ -127,13 +127,13 @@ blockquote .em { color: var(--red); font-style: normal; font-weight: 500; }
 /* ── Images ── */
 
 .image-frame {
-  width: 100%; max-width: 1400px;
+  width: 100%; max-width: 1400px; max-height: 65vh;
   overflow: hidden; background: #000;
   display: flex; align-items: center; justify-content: center;
 }
 
 .image-frame img {
-  width: 100%; height: auto;
+  width: 100%; height: auto; max-height: calc(65vh - 6px);
   object-fit: contain; display: block;
 }
 
@@ -276,13 +276,14 @@ pre {
 
 @media (max-width: 768px) {
   #header-bar, #footer-controls { padding: 1rem 1.5rem; }
-  .slide { padding: 1rem 1.5rem 2rem; }
+  .slide { padding: 1rem 1.5rem; }
 
   h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); }
   blockquote { font-size: clamp(1.1rem, 3vw, 1.5rem); }
   .thesis-layout p { font-size: 1rem; }
 
-  .image-frame { max-width: 90vw; }
+  .image-frame { max-width: 90vw; max-height: 38vh; }
+  .image-frame img { max-height: calc(38vh - 6px); }
 
   .volume-wrapper { display: none; }
 }
